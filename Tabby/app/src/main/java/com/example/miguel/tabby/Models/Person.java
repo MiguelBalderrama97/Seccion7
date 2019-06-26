@@ -2,11 +2,12 @@ package com.example.miguel.tabby.Models;
 
 public class Person {
 
-    private String name, country;
+    private String name;
+    private Country country;
 
     public Person(){}
 
-    public Person(String name, String country){
+    public Person(String name, Country country){
         this.name =  name;
         this.country  = country;
     }
@@ -19,11 +20,11 @@ public class Person {
         this.name = name;
     }
 
-    public String getCountry() {
+    public Country getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(Country country) {
         this.country = country;
     }
 }
