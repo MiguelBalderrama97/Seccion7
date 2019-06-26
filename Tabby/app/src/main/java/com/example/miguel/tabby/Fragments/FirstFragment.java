@@ -29,8 +29,6 @@ public class FirstFragment extends Fragment implements Spinner.OnItemSelectedLis
     private View view;
 
     public static List<Person> people = new ArrayList<>();
-
-    private String countryName, countryCode;
     private List<Country> countries = new ArrayList<>();
 
     private Country currentCountry;
@@ -71,6 +69,8 @@ public class FirstFragment extends Fragment implements Spinner.OnItemSelectedLis
                 }else{
                     people.add(new Person(name, currentCountry));
                     Toast.makeText(getActivity(), "Person added successfully", Toast.LENGTH_SHORT).show();
+                    etxtName.setText("");
+                    SecondFragment.peopleAdapter.notifyDataSetChanged();
                 }
             }
         });

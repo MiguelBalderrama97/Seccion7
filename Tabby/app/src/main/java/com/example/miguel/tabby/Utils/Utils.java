@@ -6,33 +6,6 @@ import java.util.List;
 
 public class Utils {
 
-    public static String setCode(int position){
-        switch (position){
-            case 0:
-                return "ES";
-            case 1:
-                return "AR";
-            case 2:
-                return "BO";
-            case 3:
-                return "CL";
-            case 4:
-                return "CO";
-            case 5:
-                return "EC";
-            case 6:
-                return "MX";
-            case 7:
-                return "PE";
-            case 8:
-                return "UY";
-            case 9:
-                return "VE";
-            default:
-                return null;
-        }
-    }
-
     public static void getAllCountries(List<Country> list){
         list.add(new Country("España","ES"));
         list.add(new Country("Argentina","AR"));
