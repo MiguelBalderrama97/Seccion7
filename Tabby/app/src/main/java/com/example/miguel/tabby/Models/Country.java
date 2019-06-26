@@ -9,12 +9,12 @@ import java.net.URL;
 public class Country {
 
     private String name;
-    private int code;
+    private String code;
     private Bitmap image;
 
     public Country(){}
 
-    public Country(String name, int code) {
+    public Country(String name, String code) {
         this.name = name;
         this.code = code;
         this.image = cargarImagen(code);
@@ -28,11 +28,11 @@ public class Country {
         this.name = name;
     }
 
-    public int getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(String code) {
         this.code = code;
     }
 
@@ -44,7 +44,7 @@ public class Country {
         this.image = image;
     }
 
-    private Bitmap cargarImagen(int code) {
+    private Bitmap cargarImagen(String code) {
         String url = "http://flagpedia.net/data/flags/w580/" + code + ".png";
         try {
             InputStream isImagen = null;

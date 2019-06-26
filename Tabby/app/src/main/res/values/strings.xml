@@ -3,4 +3,18 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="countries_array">
+        <item>España</item>
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Ecuador</item>
+        <item>México</item>
+        <item>Perú</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+
 </resources>
